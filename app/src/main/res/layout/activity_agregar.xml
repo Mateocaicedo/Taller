@@ -1,105 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="203dp"
-        android:layout_height="64dp"
-        android:layout_marginTop="16dp"
-        android:text="Descripcion"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="315dp"
+        android:layout_height="282dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="25dp">
 
-    <EditText
-        android:id="@+id/nombret"
-        style="@style/Widget.AppCompat.EditText"
-        android:layout_width="238dp"
-        android:layout_height="50dp"
-        android:width="50dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:lineSpacingExtra="8sp"
-        android:singleLine="false"
-        android:textAlignment="viewStart"
-        android:textColor="#3F51B5"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.159"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.25" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="278dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nombre actividad"
-        android:textColor="#000000"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.101"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.182" />
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="197dp"
+                android:layout_height="34dp"
+                android:layout_marginLeft="55dp"
+                android:text="NAME TASK"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.261" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Descripcion"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.095"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.375" />
+            <EditText
+                android:id="@+id/nombret"
+                style="@style/Widget.AppCompat.EditText"
+                android:layout_width="271dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:width="50dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:lineSpacingExtra="8sp"
+                android:singleLine="false"
+                android:textAlignment="viewStart"
+                android:textColor="#151515"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.325" />
 
-    <EditText
-        android:id="@+id/desc"
-        android:layout_width="352dp"
-        android:layout_height="155dp"
-        android:gravity="top"
-        android:inputType="text|textMultiLine"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.525"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.571" />
+            <EditText
+                android:id="@+id/desc"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="top"
+                android:hint="WRITE YOUR DESCRIPTION"
+                android:inputType="textMultiLine|text"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.493"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.452" />
+        </LinearLayout>
 
-    <Button
-        android:id="@+id/agg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="AGREGAR"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.774" />
+    </androidx.cardview.widget.CardView>
 
-    <Button
-        android:id="@+id/cancelar"
-        android:layout_width="117dp"
-        android:layout_height="49dp"
-        android:text="CANCELAR"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.105"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.884" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Taller">
         <activity
-            android:name=".Agregar"
+            android:name=".Aggregate"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
