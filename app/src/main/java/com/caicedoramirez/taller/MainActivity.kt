@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         addBTn=findViewById(R.id.btnadd)
         recv = findViewById(R.id.listareciclada)
         datos= ArrayList()
-        customAdapter = CustomAdapter(datos)
+        customAdapter = CustomAdapter(this,datos)
         recv.layoutManager = LinearLayoutManager(this)
         recv.adapter = customAdapter
         addBTn.setOnClickListener {

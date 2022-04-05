@@ -1,6 +1,6 @@
 package com.caicedoramirez.taller
 
-class Datos(val titulo:String, val descripcion:String) {
+class Datos(var titulo:String, var descripcion:String) {
 
 
 
