@@ -57,6 +57,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_weight="1"
+                android:backgroundTint="#76DD57"
                 android:text="edit" />
 
             <Button
@@ -65,6 +66,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_weight="1"
+                android:backgroundTint="#E17373"
+                android:shadowColor="@color/white"
                 android:text="delete" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
