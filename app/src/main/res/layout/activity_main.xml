@@ -33,15 +33,13 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/listareciclada"
         android:layout_width="match_parent"
-        android:layout_height="715dp"
+        android:layout_height="match_parent"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
-        android:layout_marginStart="0dp"
         android:layout_marginTop="57dp"
-        android:layout_marginEnd="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.533"
@@ -53,21 +51,14 @@
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/btnadd"
+        app:layout_anchor="@id/btnadd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_margin="15dp"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:layout_gravity="end"
-        android:layout_marginTop="673dp"
-        android:layout_marginEnd="26dp"
         android:clickable="true"
         app:backgroundTint="#BB86FC"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.955"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.97"
         app:srcCompat="@android:drawable/ic_input_add" />
 
 </RelativeLayout>
