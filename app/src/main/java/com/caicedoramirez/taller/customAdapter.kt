@@ -8,7 +8,9 @@ import android.view.ViewGroup
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import androidx.core.text.set
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.textfield.TextInputEditText
 
 class CustomAdapter(val c:Context, val datos: ArrayList<Datos>): RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
 
@@ -46,18 +48,27 @@ class CustomAdapter(val c:Context, val datos: ArrayList<Datos>): RecyclerView.Ad
             edit.setOnClickListener{
                 val position = datos[adapterPosition]
                 val v = LayoutInflater.from(c).inflate(R.layout.activity_agregar, null)
-                val t = v.findViewById<EditText>(R.id.nombret)
-                val d = v.findViewById<EditText>(R.id.desc)
+                val t = v.findViewById<TextInputEditText>(R.id.nombret)
+                val d = v.findViewById<TextInputEditText>(R.id.desc)
+                t.setText(position.titulo)
+                d.setText(position.descripcion)
                         AlertDialog.Builder(c)
                             .setView(v)
+
                             .setPositiveButton("OK"){
                                     dialog,_->
+                                Toast.makeText(itemView.context,"${position.titulo}", Toast.LENGTH_SHORT).show()
+
+
                                 if (t.text.toString().isEmpty() || d.text.toString().isEmpty()){
                                 Toast.makeText(itemView.context, "Campos vacios", Toast.LENGTH_SHORT).show()
 
                                 }else{
+
                                     position.titulo = t.text.toString()
                                     position.descripcion = d.text.toString()
+
+
                                     notifyDataSetChanged()
                                     Toast.makeText(itemView.context, "Task is Edited", Toast.LENGTH_SHORT).show()
                                     dialog.dismiss()

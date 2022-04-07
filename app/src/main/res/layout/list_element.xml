@@ -8,36 +8,32 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_margin="11dp"
-        app:cardCornerRadius="6dp"
-        app:cardElevation="10dp"
-        app:cardMaxElevation="15dp">
+        android:layout_margin="11dp">
 
         <LinearLayout
             android:layout_width="378dp"
-            android:layout_height="124dp"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/name_task"
-                android:layout_width="193dp"
+                android:layout_width="210dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="13dp"
                 android:layout_marginTop="10dp"
                 android:text="Name task"
-                android:textColor="#050505"
-                android:textSize="16sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/descripcion_element"
-                android:layout_width="198dp"
-                android:layout_height="83dp"
-                android:layout_margin="10dp"
-                android:layout_weight="1"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginBottom="10dp"
                 android:text="Descripcion"
                 android:textSize="16sp" />
 
@@ -45,9 +41,9 @@
 
         <LinearLayout
             android:layout_width="138dp"
-            android:layout_height="107dp"
-            android:layout_gravity="end"
-            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center"
+
             android:layout_weight="1"
             android:orientation="vertical">
 
@@ -57,7 +53,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_weight="1"
-                android:backgroundTint="#76DD57"
+                android:backgroundTint="#BB86FC"
                 android:text="edit" />
 
             <Button
@@ -66,7 +62,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_weight="1"
-                android:backgroundTint="#E17373"
+                android:backgroundTint="#BB86FC"
                 android:shadowColor="@color/white"
                 android:text="delete" />
         </LinearLayout>
